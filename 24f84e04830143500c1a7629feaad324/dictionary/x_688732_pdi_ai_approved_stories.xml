@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="393b4e48830143500c1a7629feaad3f1" label="Approved Stories" max_length="40" name="x_688732_pdi_ai_approved_stories" type="collection">
+        <element label="Safe Story" max_length="32" name="safe_story" reference="sn_safe_story" type="reference"/>
+        <index name="index">
+            <element name="safe_story"/>
+        </index>
+    </element>
+</database>
