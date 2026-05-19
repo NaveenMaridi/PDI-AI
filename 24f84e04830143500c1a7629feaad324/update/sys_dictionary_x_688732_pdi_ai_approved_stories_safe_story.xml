@@ -38,7 +38,7 @@
         <name>x_688732_pdi_ai_approved_stories</name>
         <next_element/>
         <primary>false</primary>
-        <read_only>false</read_only>
+        <read_only>true</read_only>
         <read_only_option/>
         <read_roles/>
         <reference display_value="" name="sn_safe_story">sn_safe_story</reference>
