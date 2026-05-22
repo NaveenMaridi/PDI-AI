@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Flow to update approved stories records with worknote indicating AI has taken up the story</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>ai_approved_stories_update_worknote</internal_name>
+        <label_cache>[]</label_cache>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>AI Update Approved Stories Worknotes</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-22 10:30:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9c425682830d0b500c1a7629feaad456</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AI Update Approved Stories Worknotes</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="PDI AI" source="x_688732_pdi_ai">24f84e04830143500c1a7629feaad324</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PDI AI">24f84e04830143500c1a7629feaad324</sys_scope>
+        <sys_update_name>sys_hub_flow_ai_update_worknotes</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-22 10:30:00</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>1</version>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=9c425682830d0b500c1a7629feaad456"/>
+    <sys_variable_value action="delete_multiple" query="document_key=9c425682830d0b500c1a7629feaad456"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_688732_pdi_ai_approved_stories">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-22 10:30:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5d726b82830d0b500c1a7629feaad457</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="PDI AI">24f84e04830143500c1a7629feaad324</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-22 10:30:00</sys_updated_on>
+        <table>x_688732_pdi_ai_approved_stories</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>9c425682830d0b500c1a7629feaad456</identifier>
+        <identifier_type>flow</identifier_type>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-22 10:30:00</sys_created_on>
+        <sys_id>6e826b82830d0b500c1a7629feaad458</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-22 10:30:00</sys_updated_on>
+        <trigger display_value="">5d726b82830d0b500c1a7629feaad457</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=9c425682830d0b500c1a7629feaad456^sys_idNOT IN6e826b82830d0b500c1a7629feaad458"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=9c425682830d0b500c1a7629feaad456"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=9c425682830d0b500c1a7629feaad456^sys_idNOT IN"/>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <description/>
+        <do_not_execute_script>false</do_not_execute_script>
+        <flow display_value="AI Update Approved Stories Worknotes">9c425682830d0b500c1a7629feaad456</flow>
+        <flow_stage_type>core_action</flow_stage_type>
+        <label>Update Approved Story with Worknote</label>
+        <name>update_approved_story_worknote</name>
+        <position_x>300</position_x>
+        <position_y>200</position_y>
+        <script_input_variables/>
+        <script_output_variables/>
+        <skip_execution>false</skip_execution>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-22 10:30:00</sys_created_on>
+        <sys_id>7f936b82830d0b500c1a7629feaad459</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PDI AI">24f84e04830143500c1a7629feaad324</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-22 10:30:00</sys_updated_on>
+        <type>CORE_ACTION:UPDATE</type>
+        <uid>1</uid>
+        <update_table>x_688732_pdi_ai_approved_stories</update_table>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage_input action="INSERT_OR_UPDATE">
+        <flow_stage display_value="Update Approved Story with Worknote">7f936b82830d0b500c1a7629feaad459</flow_stage>
+        <label>Add Worknote</label>
+        <name>worknotes</name>
+        <required>false</required>
+        <sys_class_name>sys_hub_flow_stage_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-22 10:30:00</sys_created_on>
+        <sys_id>8a946b82830d0b500c1a7629feaad45a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="PDI AI">24f84e04830143500c1a7629feaad324</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-22 10:30:00</sys_updated_on>
+        <type>STRING</type>
+        <value>This story has been taken up by AI for processing and updates</value>
+    </sys_hub_flow_stage_input>
+    <sys_hub_flow_stage_input action="delete_multiple" query="flow_stage=7f936b82830d0b500c1a7629feaad459^sys_idNOT IN8a946b82830d0b500c1a7629feaad45a"/>
+</record_update>
